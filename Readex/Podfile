@@ -5,3 +5,7 @@ platform :ios, '6.0'
 target :ReadexTests, :exclusive => true do
   pod 'Kiwi/XCTest'
 end
+
+# AVOS Cloud
+pod 'AVOSCloud'
+pod 'AVOSCloudSNS'

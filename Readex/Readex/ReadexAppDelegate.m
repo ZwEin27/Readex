@@ -7,12 +7,25 @@
 //
 
 #import "ReadexAppDelegate.h"
+#import <AVOSCloud/AVOSCloud.h>
 
 @implementation ReadexAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [AVOSCloud setApplicationId:@"oy7d9173e4yu7c3u4c5rp799m8hf989kcw6bo9synhc29hck"
+                      clientKey:@"gwwvapxsr1iwi2n11b2k3l3s8qr5szhl8skzwzgei8011hjy"];
+    
+    [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    
+    AVObject *testObject = [AVObject objectWithClassName:@"TestObject"];
+    [testObject setObject:@"bar" forKey:@"foo"];
+    [testObject save];
+    
+    
     return YES;
 }
 							

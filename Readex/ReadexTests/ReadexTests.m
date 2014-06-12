@@ -42,9 +42,9 @@ describe(@"ClassName", ^{
             it(@"does another thing", ^{
             });
             
-            pending(@"something unimplemented", ^{
-                // doesn't do anything other than log a pending message to the output when run
-            });
+//            pending(@"something unimplemented", ^{
+//                // doesn't do anything other than log a pending message to the output when run
+//            });
         });
     });
 });

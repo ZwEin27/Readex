@@ -1,0 +1,6 @@
+FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/AVOSCloud/iOS/release-v2.5.7" "$(PODS_ROOT)/AVOSCloudSNS/iOS/release-v2.5.7"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AVOSCloud" "${PODS_ROOT}/Headers/AVOSCloudSNS" "${PODS_ROOT}/Headers/Kiwi"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/AVOSCloud" -isystem "${PODS_ROOT}/Headers/AVOSCloudSNS" -isystem "${PODS_ROOT}/Headers/Kiwi"
+OTHER_LDFLAGS = -ObjC -framework AVOSCloud -framework AVOSCloudSNS -framework CFNetwork -framework CoreGraphics -framework CoreLocation -framework CoreTelephony -framework MobileCoreServices -framework QuartzCore -framework Security -framework SystemConfiguration
+PODS_ROOT = ${SRCROOT}/Pods

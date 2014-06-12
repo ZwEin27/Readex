@@ -1,4 +1,7 @@
 PODS:
+  - AVOSCloud (2.5.7)
+  - AVOSCloudSNS (2.5.7):
+    - AVOSCloud
   - Kiwi/ARC (2.2.4)
   - Kiwi/NonARC (2.2.4)
   - Kiwi/XCTest (2.2.4):
@@ -6,9 +9,13 @@ PODS:
     - Kiwi/NonARC
 
 DEPENDENCIES:
+  - AVOSCloud
+  - AVOSCloudSNS
   - Kiwi/XCTest
 
 SPEC CHECKSUMS:
+  AVOSCloud: d28c040b4ba500af4ae411290a5ba1ca4d9fb483
+  AVOSCloudSNS: 51bf22011a99cc308d8476409e6b44cb9bf27364
   Kiwi: c73667f2b84cbf36f1a3830267c5a4ae8dcbd8ba
 
 COCOAPODS: 0.33.1
